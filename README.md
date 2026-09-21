@@ -1,10 +1,7 @@
-Theme Name : Electronics Store (E-Commerce)
+Theme ID: TH-044
 
-UI/UX Designer Name : Kaviarasan R
+Theme Name: Electronics Store (E-Commerce)
 
-UI/UX Design Link : https://www.figma.com/design/CjtEzVy197iAI1nHEegrxR/Untitled?node-id=772-545&t=y0Tl7OQw3WqmQpiR-1
+UI/UX Designer: Kaviarasan R
 
-Developer Name : Mohammed Asaraf J
-
-Website Link : https://asaraf-dev.github.io/Electronics-Store-E-Commerce-/
-
+Figma Design Link: https://www.figma.com/design/CjtEzVy197iAI1nHEegrxR/Untitled?node-id=772-545&t=y0Tl7OQw3WqmQpiR-1
