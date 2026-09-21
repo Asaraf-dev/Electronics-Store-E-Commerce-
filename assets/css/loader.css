@@ -1,0 +1,388 @@
+/* =========================================
+   STACKLY ELECTRONICS LOADER
+========================================= */
+
+:root {
+    --es-ldr-primary: #0b2d4f;
+    --es-ldr-secondary: #f57c00;
+    --es-ldr-accent: #1e88e5;
+    --es-ldr-white: #ffffff;
+}
+
+/* Main Loader */
+
+.es-ldr-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at center,
+            #123d60 0%,
+            #0b2d4f 42%,
+            #061b30 100%
+        );
+    color: var(--es-ldr-white);
+    transition:
+        opacity 0.75s ease,
+        visibility 0.75s ease;
+}
+
+/* Mouse Glow */
+
+.es-ldr-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 230px at var(--es-ldr-x, 50%) var(--es-ldr-y, 50%),
+        rgba(30, 136, 229, 0.18),
+        transparent 75%
+    );
+}
+
+/* Loader Content */
+
+.es-ldr-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Logo */
+
+.es-ldr-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 145px;
+    margin-bottom: 25px;
+}
+
+/* Logo Icon */
+
+.es-ldr-logo-icon {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 22px;
+    background: linear-gradient(
+        145deg,
+        rgba(30, 136, 229, 0.28),
+        rgba(245, 124, 0, 0.18)
+    );
+    box-shadow:
+        0 0 25px rgba(30, 136, 229, 0.35),
+        inset 0 0 20px rgba(255, 255, 255, 0.04);
+    animation: esLdrIconPulse 2.4s ease-in-out infinite;
+}
+
+.es-ldr-logo-icon i {
+    color: var(--es-ldr-white);
+    font-size: 42px;
+}
+
+/* Rotating Rings */
+
+.es-ldr-logo-ring {
+    position: absolute;
+    border: 1px solid rgba(30, 136, 229, 0.65);
+    border-radius: 50%;
+}
+
+.es-ldr-ring-one {
+    width: 120px;
+    height: 120px;
+    border-top-color: var(--es-ldr-secondary);
+    border-bottom-color: transparent;
+    animation: esLdrRotate 5s linear infinite;
+}
+
+.es-ldr-ring-two {
+    width: 145px;
+    height: 145px;
+    border-right-color: var(--es-ldr-secondary);
+    border-left-color: transparent;
+    animation: esLdrRotateReverse 7s linear infinite;
+}
+
+/* Circuit Lines */
+
+.es-ldr-circuit {
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: var(--es-ldr-accent);
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.8);
+}
+
+.es-ldr-circuit::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    top: -2px;
+    border-radius: 50%;
+    background: var(--es-ldr-secondary);
+    box-shadow: 0 0 10px var(--es-ldr-secondary);
+}
+
+.es-ldr-circuit-one {
+    top: 22px;
+    right: 0;
+}
+
+.es-ldr-circuit-one::after {
+    right: -3px;
+}
+
+.es-ldr-circuit-two {
+    bottom: 22px;
+    left: 0;
+}
+
+.es-ldr-circuit-two::after {
+    left: -3px;
+}
+
+.es-ldr-circuit-three {
+    width: 20px;
+    top: 50%;
+    left: -5px;
+    transform: rotate(90deg);
+}
+
+.es-ldr-circuit-four {
+    width: 20px;
+    right: -5px;
+    bottom: 50%;
+    transform: rotate(90deg);
+}
+
+/* Brand */
+
+.es-ldr-brand {
+    margin: 0;
+    color: var(--es-ldr-white);
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: 7px;
+    line-height: 1.2;
+}
+
+.es-ldr-tagline {
+    margin: 9px 0 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* Message */
+
+.es-ldr-message-wrapper {
+    min-height: 25px;
+    margin-top: 30px;
+}
+
+.es-ldr-message {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* Animated Dots */
+
+.es-ldr-dots {
+    display: flex;
+    gap: 7px;
+    margin-top: 22px;
+}
+
+.es-ldr-dots span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--es-ldr-secondary);
+    animation: esLdrDotBounce 1.2s ease-in-out infinite;
+}
+
+.es-ldr-dots span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.es-ldr-dots span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Floating Particles */
+
+.es-ldr-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.es-ldr-particle {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background: rgba(30, 136, 229, 0.75);
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.55);
+    animation: esLdrParticleFloat 6s ease-in-out infinite;
+}
+
+/* Hide State */
+
+.es-ldr-loader.es-ldr-hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.es-ldr-loader.es-ldr-exit {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.03);
+}
+
+/* =========================================
+   KEYFRAMES
+========================================= */
+
+@keyframes esLdrRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes esLdrRotateReverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes esLdrIconPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow:
+            0 0 25px rgba(30, 136, 229, 0.35),
+            inset 0 0 20px rgba(255, 255, 255, 0.04);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow:
+            0 0 40px rgba(30, 136, 229, 0.55),
+            inset 0 0 25px rgba(255, 255, 255, 0.08);
+    }
+}
+
+@keyframes esLdrDotBounce {
+    0%,
+    60%,
+    100% {
+        opacity: 0.35;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes esLdrParticleFloat {
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-35px) scale(1.3);
+    }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 575px) {
+    .es-ldr-logo {
+        width: 125px;
+        height: 125px;
+    }
+
+    .es-ldr-ring-one {
+        width: 105px;
+        height: 105px;
+    }
+
+    .es-ldr-ring-two {
+        width: 125px;
+        height: 125px;
+    }
+
+    .es-ldr-logo-icon {
+        width: 68px;
+        height: 68px;
+    }
+
+    .es-ldr-logo-icon i {
+        font-size: 34px;
+    }
+
+    .es-ldr-brand {
+        letter-spacing: 5px;
+    }
+
+    .es-ldr-message {
+        font-size: 12px;
+    }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .es-ldr-logo-ring,
+    .es-ldr-logo-icon,
+    .es-ldr-dots span,
+    .es-ldr-particle {
+        animation: none;
+    }
+
+    .es-ldr-loader {
+        transition: none;
+    }
+}
