@@ -1,0 +1,917 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | Electronics Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div data-component="navbar"></div>
+
+    <!-- Stackly Electronics Loader Start -->
+    <div class="es-ldr-loader" id="esLdrLoader" aria-label="Loading website">
+        <div class="es-ldr-glow"></div>
+
+        <div class="es-ldr-particles" id="esLdrParticles"></div>
+
+        <div class="es-ldr-content">
+
+            <div class="es-ldr-logo">
+                <div class="es-ldr-logo-ring es-ldr-ring-one"></div>
+                <div class="es-ldr-logo-ring es-ldr-ring-two"></div>
+
+                <div class="es-ldr-logo-icon">
+                    <i class="bi bi-cpu"></i>
+                </div>
+
+                <span class="es-ldr-circuit es-ldr-circuit-one"></span>
+                <span class="es-ldr-circuit es-ldr-circuit-two"></span>
+                <span class="es-ldr-circuit es-ldr-circuit-three"></span>
+                <span class="es-ldr-circuit es-ldr-circuit-four"></span>
+            </div>
+
+            <h1 class="es-ldr-brand">STACKLY</h1>
+
+            <p class="es-ldr-tagline">Electronic Store</p>
+
+            <div class="es-ldr-message-wrapper">
+                <p class="es-ldr-message" id="esLdrMessage">
+                    Powering up your experience...
+                </p>
+            </div>
+
+            <div class="es-ldr-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+    <!-- Stackly Electronics Loader End -->
+
+    <!--- Product Hero Section Start --->
+    <section class="prd-hero es-reveal">
+        <div class="container">
+            <div class="prd-hero-header">
+                <h1 class="prd-hero-title">Top Cell Phones &amp; Tablets</h1>
+            </div>
+            <div class="prd-hero-grid">
+                <a href="product.html?category=headphones" class="prd-hero-main es-reveal-left">
+                    <img src="assets/images/prd-hero-headphones.webp" alt="Noise Cancelling Headphone"
+                        class="prd-hero-main-image">
+                    <div class="prd-hero-main-overlay"></div>
+                    <div class="prd-hero-main-content">
+                        <h2 class="prd-hero-main-title">Noise Cancelling<br><span>Headphone</span></h2>
+                        <p class="prd-hero-main-description">Boom Over-Ear Headphone<br>Wifi, Voice Assistant,<br>Low
+                            Latency Game Mode</p>
+                        <span class="prd-hero-main-button">Buy Now</span>
+                    </div>
+                </a>
+                <a href="product.html?category=mobile" class="prd-hero-side es-reveal-right">
+                    <img src="assets/images/prd-hero-mobile.webp" alt="Redmi Note 12 Pro+ 5G"
+                        class="prd-hero-side-image">
+                    <!--<div class="prd-hero-side-overlay"></div>-->
+                    <div class="prd-hero-side-content">
+                        <h2 class="prd-hero-side-title">Redmi Note 12<br>Pro+ 5G</h2>
+                        <p class="prd-hero-side-description">Rise to the challenge</p>
+                        <span class="prd-hero-side-button">Shop Now</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--- Product Hero Section End --->
+
+    <!--- Product Section Start --->
+    <section class="prd-products-section es-reveal">
+        <div class="container">
+
+            <!--- Popular Categories --->
+            <div class="prd-popular-categories">
+                <div class="prd-section-header">
+                    <h2 class="prd-section-title">Popular Categories</h2>
+                </div>
+
+                <div class="prd-category-top-grid es-reveal-stagger">
+
+                    <a href="?category=mobile" class="prd-top-category" data-filter="mobile">
+                        <div>
+                            <strong>iPhone (iOS)</strong>
+                            <span>74 Items</span>
+                        </div>
+                        <img src="assets/images/iphone.webp" alt="iPhone">
+                    </a>
+
+                    <a href="?category=android" class="prd-top-category" data-filter="android">
+                        <div>
+                            <strong>Android</strong>
+                            <span>35 Items</span>
+                        </div>
+                        <img src="assets/images/android.webp" alt="Android">
+                    </a>
+
+                    <a href="?category=5g" class="prd-top-category" data-filter="5g">
+                        <div>
+                            <strong>5G Support</strong>
+                            <span>12 Items</span>
+                        </div>
+                        <img src="assets/images/5g.webp" alt="5G">
+                    </a>
+
+                    <a href="?category=tablets" class="prd-top-category" data-filter="tablets">
+                        <div>
+                            <strong>Apple Tablets</strong>
+                            <span>22 Items</span>
+                        </div>
+                        <img src="assets/images/tablet.webp" alt="Tablet">
+                    </a>
+
+                    <a href="?category=accessories" class="prd-top-category" data-filter="accessories">
+                        <div>
+                            <strong>Smartphone Chargers</strong>
+                            <span>33 Items</span>
+                        </div>
+                        <img src="assets/images/charger.webp" alt="Charger">
+                    </a>
+
+                    <a href="?category=gaming" class="prd-top-category" data-filter="gaming">
+                        <div>
+                            <strong>Gaming</strong>
+                            <span>9 Items</span>
+                        </div>
+                        <img src="assets/images/gaming.webp" alt="Gaming">
+                    </a>
+
+                    <a href="?category=xiaomi" class="prd-top-category" data-filter="xiaomi">
+                        <div>
+                            <strong>Xiaomi</strong>
+                            <span>52 Items</span>
+                        </div>
+                        <img src="assets/images/xiaomi.webp" alt="Xiaomi">
+                    </a>
+
+                    <a href="?category=accessories" class="prd-top-category" data-filter="accessories">
+                        <div>
+                            <strong>Accessories</strong>
+                            <span>29 Items</span>
+                        </div>
+                        <img src="assets/images/mobile-accessories.webp" alt="Accessories">
+                    </a>
+
+                    <a href="?category=tablets" class="prd-top-category" data-filter="tablets">
+                        <div>
+                            <strong>Samsung Tablets</strong>
+                            <span>26 Items</span>
+                        </div>
+                        <img src="assets/images/cellphone-02.webp" alt="Samsung Tablets">
+                    </a>
+
+                    <a href="?category=ereader" class="prd-top-category" data-filter="ereader">
+                        <div>
+                            <strong>eReader</strong>
+                            <span>5 Items</span>
+                        </div>
+                        <img src="assets/images/ereader.webp" alt="eReader">
+                    </a>
+
+                </div>
+            </div>
+
+            <!--- Product Content --->
+            <div class="prd-content-layout">
+
+                <!--- Sidebar --->
+                <aside class="prd-sidebar es-reveal-left">
+
+                    <div class="prd-sidebar-header">
+                        <h3>Categories</h3>
+                        <button type="button" class="prd-filter-close" aria-label="Close filter">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+
+                    <!--<button type="button" class="prd-filter-button active" data-filter="all">
+                        All Categories
+                    </button>-->
+
+                    <div class="prd-sidebar-group">
+                        <h4>Cell Phones & Tablets</h4>
+
+                        <button type="button" class="prd-sidebar-filter active" data-filter="all">
+                            All
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="mobile">
+                            iPhone
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="samsung">
+                            Samsung
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="xiaomi">
+                            Xiaomi
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="asus">
+                            Asus
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="oppo">
+                            Oppo
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="gaming">
+                            Gaming Smartphone
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="ipad">
+                            iPad
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="tablets">
+                            Window Tablets
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="ereader">
+                            eReader
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="accessories">
+                            Smartphone Chargers
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="5g">
+                            5G Support Smartphone
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="accessories">
+                            Smartphone Accessories
+                        </button>
+
+                        <button type="button" class="prd-sidebar-filter" data-filter="tablets">
+                            Tablets Accessories
+                        </button>
+                    </div>
+
+                </aside>
+
+                <!--- Products Area --->
+                <div class="prd-products-area es-reveal-right">
+
+                    <div class="prd-products-toolbar">
+                        <h2 class="prd-products-title">Best Seller In This Category</h2>
+
+                        <button type="button" class="prd-mobile-filter-button-top">
+                            <i class="bi bi-funnel"></i>
+                            Filter
+                        </button>
+                    </div>
+
+                    <div class="prd-products-grid es-reveal-stagger" id="prd-products-grid">
+
+                        <!--- Product 1 --->
+                        <article class="prd-product-card-top" data-category="mobile">
+                            <div class="prd-product-image-top">
+
+                                <span class="prd-product-sale">
+                                    SAVE<br>$59.00
+                                </span>
+
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <img src="assets/images/product-02.webp" alt="Ulosk Mini Case">
+
+                            </div>
+
+                            <span class="prd-product-count">(8)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                Ulosk Mini Case 2.0, Xenon i10 / 32GB / SSD 512GB / VGA 8GB
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$1,729.00</strong>
+                                <del>$2,119.00</del>
+                            </div>
+
+                            <span class="prd-product-shipping">
+                                Free Shipping
+                            </span>
+
+                            <span class="prd-product-stock out-stock">
+                                <i class="bi bi-x-circle-fill"></i>
+                                Out of stock
+                            </span>
+                        </article>
+
+                        <!--- Product 2 --->
+                        <article class="prd-product-card-top" data-category="mobile gaming">
+                            <div class="prd-product-image-top">
+
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <img src="assets/images/product-03.webp" alt="Oppo Watch Series 8">
+
+                            </div>
+
+                            <span class="prd-product-count"></span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                Oppo Watch Series 8 GPS + Cellular Stainless Steel Case
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$979.00 - $1,259.00</strong>
+                            </div>
+
+                            <span class="prd-product-shipping">
+                                2.98 Shipping
+                            </span>
+
+                            <span class="prd-product-stock">
+                                PRE - ORDER
+                            </span>
+                        </article>
+
+                        <!--- Product 3 --->
+                        <article class="prd-product-card-top" data-category="accessories">
+                            <div class="prd-product-image-top">
+
+                                <span class="prd-product-sale">
+                                    SAVE<br>$3.00
+                                </span>
+
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <img src="assets/images/product-06.webp" alt="iSmart 24V Charger">
+
+                            </div>
+
+                            <span class="prd-product-count">(9)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                iSmart 24V Charger
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$9.00</strong>
+                                <del>$12.00</del>
+                            </div>
+
+                            <span class="prd-product-shipping">
+                                $3.98 Shipping
+                            </span>
+
+                            <span class="prd-product-stock">
+                                Contact
+                            </span>
+                        </article>
+
+                        <!--- Product 4 --->
+                        <article class="prd-product-card-top" data-category="tablets">
+                            <div class="prd-product-image-top">
+
+                                <span class="prd-product-sale">
+                                    SAVE<br>$199.00
+                                </span>
+
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <img src="assets/images/product-01.webp" alt="OPod Pro Tablet">
+
+                            </div>
+
+                            <span class="prd-product-count">(152)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                OPod Pro 12.9 Inch M1 2023, 64GB + WiFi, GPS
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$569.00</strong>
+                                <del>$759.00</del>
+                            </div>
+
+                            <span class="prd-product-shipping">
+                                Free Shipping
+                            </span>
+
+                            <span class="prd-product-stock">
+                                <i class="bi bi-check-circle-fill"></i>
+                                In stock
+                            </span>
+                        </article>
+
+                    </div>
+
+                    <p class="prd-no-products" id="prd-no-products">
+                        No products found in this category.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--- Product Section End --->
+
+    <!--- Product Listing Start --->
+    <section class="prd-shop es-reveal">
+        <div class="container">
+
+            <div class="prd-shop-layout">
+                <aside class="prd-filter-sidebar es-reveal-left" id="prd-filter-sidebar">
+                    <div class="prd-filter-mobile-header">
+                        <h2 class="prd-filter-heading">Categories</h2>
+                        <button type="button" class="prd-filter-close" id="prd-filter-close"
+                            aria-label="Close filter"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="prd-filter-body">
+                        <button type="button" class="prd-filter-reset" id="prd-filter-reset">Reset All</button>
+                        <div class="prd-filter-price-chips"><span>Min: $45.00</span><span>10.9 inch</span><span>Color:
+                                Red</span><span>128GB</span></div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Brands</h3>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="brand"
+                                    value="ernavato"><span
+                                    class="prd-filter-box"></span><span>ernavato</span><small>(14)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="brand"
+                                    value="godyccess"><span
+                                    class="prd-filter-box"></span><span>godyccess</span><small>(9)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="brand"
+                                    value="microsoft"><span
+                                    class="prd-filter-box"></span><span>microsoft</span><small>(6)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="brand"
+                                    value="pcloudphone"><span
+                                    class="prd-filter-box"></span><span>pcloudphone</span><small>(18)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="brand"
+                                    value="micro"><span
+                                    class="prd-filter-box"></span><span>micro</span><small>(11)</small></label>
+                        </div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Price</h3>
+                            <div class="prd-filter-range"><input type="number" id="prd-price-min" min="0"
+                                    value="5"><span>to</span><input type="number" id="prd-price-max" min="0"
+                                    value="5000"><button type="button" id="prd-price-apply">Go</button>
+                            </div>
+                            <div class="prd-filter-range-track"><span></span></div>
+                        </div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Rating</h3>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="rating"
+                                    value="5"><span class="prd-filter-box"></span><span
+                                    class="prd-filter-stars">★★★★★</span><small>(152)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="rating"
+                                    value="4"><span class="prd-filter-box"></span><span
+                                    class="prd-filter-stars">★★★★☆</span><small>(124)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="rating"
+                                    value="3"><span class="prd-filter-box"></span><span
+                                    class="prd-filter-stars">★★★☆☆</span><small>(51)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="rating"
+                                    value="2"><span class="prd-filter-box"></span><span
+                                    class="prd-filter-stars">★★☆☆☆</span><small>(11)</small></label>
+                        </div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Screen Size</h3>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="size"
+                                    value="under-7"><span class="prd-filter-box"></span><span>7&quot;
+                                    Under</span><small>(7)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="size"
+                                    value="7-9"><span class="prd-filter-box"></span><span>7&quot; -
+                                    9&quot;</span><small>(10)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="size"
+                                    value="9-10"><span class="prd-filter-box"></span><span>9&quot; -
+                                    10.1&quot;</span><small>(7)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="size"
+                                    value="10-plus"><span class="prd-filter-box"></span><span>10.1&quot; &amp;
+                                    Greater</span><small>(15)</small></label>
+                        </div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Color</h3>
+                            <div class="prd-filter-colors">
+                                <button type="button" class="prd-color-option" data-color="red"
+                                    style="--prd-color:#b3262e" aria-label="Red"></button>
+                                <button type="button" class="prd-color-option" data-color="orange"
+                                    style="--prd-color:#e66f22" aria-label="Orange"></button>
+                                <button type="button" class="prd-color-option" data-color="blue"
+                                    style="--prd-color:#4694bd" aria-label="Blue"></button>
+                                <button type="button" class="prd-color-option" data-color="black"
+                                    style="--prd-color:#111111" aria-label="Black"></button>
+                                <button type="button" class="prd-color-option" data-color="white"
+                                    style="--prd-color:#ffffff" aria-label="White"></button>
+                                <button type="button" class="prd-color-option" data-color="green"
+                                    style="--prd-color:#36b04a" aria-label="Green"></button>
+                                <button type="button" class="prd-color-option" data-color="purple"
+                                    style="--prd-color:#5d57a8" aria-label="Purple"></button>
+                            </div>
+                        </div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Memory</h3>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="memory"
+                                    value="128gb"><span
+                                    class="prd-filter-box"></span><span>128GB</span><small>(9)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="memory"
+                                    value="256gb"><span
+                                    class="prd-filter-box"></span><span>256GB</span><small>(11)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="memory"
+                                    value="512gb"><span
+                                    class="prd-filter-box"></span><span>512GB</span><small>(6)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="memory"
+                                    value="1tb"><span
+                                    class="prd-filter-box"></span><span>1TB</span><small>(6)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="memory"
+                                    value="2tb"><span
+                                    class="prd-filter-box"></span><span>2TB</span><small>(7)</small></label>
+                        </div>
+                        <div class="prd-filter-group">
+                            <h3 class="prd-filter-group-title">By Conditions</h3>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="condition"
+                                    value="new"><span
+                                    class="prd-filter-box"></span><span>New</span><small>(21)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="condition"
+                                    value="like-new"><span class="prd-filter-box"></span><span>Like
+                                    New</span><small>(3)</small></label>
+                            <label class="prd-filter-check"><input type="checkbox" data-filter-type="condition"
+                                    value="open-box"><span class="prd-filter-box"></span><span>Open
+                                    Box</span><small>(18)</small></label>
+                        </div>
+                    </div>
+                </aside>
+                <div class="prd-products-area es-reveal-right">
+                    <div class="prd-shop-topbar">
+                        <div class="prd-shop-topbar-left"><strong>Categories</strong><span>1 - 40</span><small>of 120
+                                results</small></div>
+                        <div class="prd-shop-topbar-right">
+                            <span>Show item</span>
+                            <select class="prd-sort-select" aria-label="Sort products">
+                                <option value="default">Default</option>
+                            </select>
+                            <button type="button" class="prd-mobile-filter-button"><i
+                                    class="bi bi-funnel"></i>Filter</button>
+                        </div>
+                    </div>
+                    <div class="prd-products-grid es-reveal-stagger" id="prd-products-grid">
+                        <article class="prd-product-card" data-brand="ernavato" data-price="579" data-rating="5"
+                            data-size="7-9" data-color="blue" data-memory="128gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-sale">SAVE<br>$190.00</span><img
+                                    src="assets/images/cellphone-01.webp" alt="SROK Smart Phone 128GB"></div><span
+                                class="prd-product-count">(152)</span><a href="product_details.html"
+                                class="prd-product-name">SROK Smart Phone 128GB, Oled Retina</a>
+                            <div class="prd-product-price"><strong>$579.00</strong><del>$859.00</del></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="godyccess" data-price="979" data-rating="4"
+                            data-size="10-plus" data-color="black" data-memory="512gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-new">NEW</span><img src="assets/images/product-10.webp"
+                                    alt="iPod Pro Tablet"></div><span class="prd-product-count">(152)</span><a
+                                href="product_details.html" class="prd-product-name">iPod Pro Tablet 2023 LTE + Wifi,
+                                GPS
+                                Cellular 12.9 Inch</a>
+                            <div class="prd-product-price"><strong>$979.00 - $1,259.00</strong></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="microsoft" data-price="659" data-rating="4"
+                            data-size="7-9" data-color="black" data-memory="256gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><img
+                                    src="assets/images/prod28.webp" alt="Samsung Galaxy"></div><span
+                                class="prd-product-count">(5)</span><a href="product_details.html"
+                                class="prd-product-name">Samsung Galaxy X60 Ultra 5G</a>
+                            <div class="prd-product-price"><strong>$659.00</strong></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="pcloudphone" data-price="1239" data-rating="5"
+                            data-size="9-10" data-color="blue" data-memory="256gb" data-condition="like-new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-sale">SAVE<br>$50.00</span><img
+                                    src="assets/images/product-09.webp" alt="Xiaomi Redmi Note 5"></div><span
+                                class="prd-product-count">(9)</span><a href="product_details.html"
+                                class="prd-product-name">Xiaomi Redmi Note 5, 64GB</a>
+                            <div class="prd-product-price"><strong>$1,239.00</strong><del>$1,619.00</del></div><span
+                                class="prd-product-shipping">Free Shipping</span><span
+                                class="prd-product-stock">Contact</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="micro" data-price="1729" data-rating="5"
+                            data-size="10-plus" data-color="silver" data-memory="128gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><img
+                                    src="assets/images/prod30.webp" alt="Microsoft Alpha Ultra"></div><span
+                                class="prd-product-count">(8)</span><a href="product_details.html"
+                                class="prd-product-name">Microsoft Alpha Ultra S5 Surface 128GB 2022, Silver</a>
+                            <div class="prd-product-price"><strong>$1,729.00</strong></div><span
+                                class="prd-product-shipping">Free Shipping</span><span
+                                class="prd-product-stock">Contact</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="ernavato" data-price="579" data-rating="5"
+                            data-size="7-9" data-color="blue" data-memory="128gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><img
+                                    src="assets/images/product-01.webp" alt="OPod Pro"></div><span
+                                class="prd-product-count">(152)</span><a href="product_details.html"
+                                class="prd-product-name">OPod Pro 12.9 Inch M1 2023, 64GB + WiFi, GPS</a>
+                            <div class="prd-product-price"><strong>$569.00</strong><del>$759.00</del></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="godyccess" data-price="659" data-rating="4"
+                            data-size="7-9" data-color="black" data-memory="256gb" data-condition="like-new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><img
+                                    src="assets/images/prod5.webp" alt="Xiaomi Redmi Note 11 Pro"></div><span
+                                class="prd-product-count">(2)</span><a href="product_details.html"
+                                class="prd-product-name">Xiaomi Redmi Note 11 Pro 256GB 2023</a>
+                            <div class="prd-product-price"><strong>$599.00 - $1,290.00</strong></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="microsoft" data-price="279" data-rating="3"
+                            data-size="9-10" data-color="white" data-memory="128gb" data-condition="open-box">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><img
+                                    src="assets/images/cellphone-04.webp" alt="OPod Pro Tablet"></div><span
+                                class="prd-product-count">(15)</span><a href="product_details.html"
+                                class="prd-product-name">OPod Pro Tablet 2023 LTE + WiFi, GPS Cellular</a>
+                            <div class="prd-product-price"><strong>$279.00</strong></div><span
+                                class="prd-product-shipping">$2.98 Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="micro" data-price="699" data-rating="5"
+                            data-size="7-9" data-color="blue" data-memory="256gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-new">NEW</span><img src="assets/images/product-08.webp"
+                                    alt="Lenovo Redmi Note"></div><span class="prd-product-count">(1)</span><a
+                                href="product_details.html" class="prd-product-name">Lenovo Redmi Note 5, 64GB</a>
+                            <div class="prd-product-price"><strong>$699.00</strong></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="pcloudphone" data-price="979" data-rating="4"
+                            data-size="9-10" data-color="red" data-memory="256gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-new">NEW</span><img src="assets/images/product-07.webp"
+                                    alt="LG Pro Tablet"></div><span class="prd-product-count">(9)</span><a
+                                href="product_details.html" class="prd-product-name">LG Pro Tablet 2023 LTE + WiFi, GPS
+                                Cellular</a>
+                            <div class="prd-product-price"><strong>$179.00 - $549.00</strong></div><span
+                                class="prd-product-shipping">$2.98 Shipping</span><span
+                                class="prd-product-stock">PRE-ORDER</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="microsoft" data-price="859" data-rating="4"
+                            data-size="7-9" data-color="purple" data-memory="256gb" data-condition="open-box">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-out">OUT OF STOCK</span><img src="assets/images/product-11.webp"
+                                    alt="Samsung Galaxy X60"></div><span class="prd-product-count">(8)</span><a
+                                href="product_details.html" class="prd-product-name">Samsung Galaxy X60 Ultra 5G</a>
+                            <div class="prd-product-price"><strong>$659.00</strong></div><span
+                                class="prd-product-shipping">Free Shipping</span><span
+                                class="prd-product-stock out-stock">OUT OF STOCK</span>
+                        </article>
+                        <article class="prd-product-card" data-brand="ernavato" data-price="579" data-rating="5"
+                            data-size="7-9" data-color="blue" data-memory="128gb" data-condition="new">
+                            <div class="prd-product-image"><button type="button" class="prd-wishlist-btn"
+                                    aria-label="Add to wishlist"><i class="bi bi-heart"></i></button><span
+                                    class="prd-product-sale">SAVE<br>$190.00</span><img
+                                    src="assets/images/cellphone-01.webp" alt="SROK Smart Phone"></div><span
+                                class="prd-product-count">(152)</span><a href="product_details.html"
+                                class="prd-product-name">SROK Smart Phone 128GB, Oled Retina</a>
+                            <div class="prd-product-price"><strong>$579.00</strong><del>$859.00</del></div><span
+                                class="prd-product-shipping">Free Shipping</span><span class="prd-product-stock"><i
+                                    class="bi bi-check-circle-fill"></i>In stock</span>
+                        </article>
+
+                        <!-- Product Card 13 -->
+                        <article class="prd-product-card" data-brand="ernavato" data-price="899" data-rating="4"
+                            data-size="7-9" data-color="black" data-memory="256gb" data-condition="new">
+
+                            <div class="prd-product-image">
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <span class="prd-product-new">NEW</span>
+
+                                <img src="assets/images/product-12.webp" alt="Premium Smartphone">
+                            </div>
+
+                            <span class="prd-product-count">(24)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                Premium Smart Phone 256GB, AMOLED Display
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$899.00</strong>
+                                <del>$1,099.00</del>
+                            </div>
+
+                            <span class="prd-product-shipping">Free Shipping</span>
+
+                            <span class="prd-product-stock">
+                                <i class="bi bi-check-circle-fill"></i>
+                                In stock
+                            </span>
+                        </article>
+
+                        <!-- Product Card 14 -->
+                        <article class="prd-product-card" data-brand="godyccess" data-price="1299" data-rating="5"
+                            data-size="10-plus" data-color="silver" data-memory="512gb" data-condition="new">
+
+                            <div class="prd-product-image">
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <span class="prd-product-sale">SAVE<br>$200.00</span>
+
+                                <img src="assets/images/product-13.webp" alt="Pro Laptop">
+                            </div>
+
+                            <span class="prd-product-count">(18)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                Pro Laptop 15 Inch, 512GB SSD
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$1,299.00</strong>
+                                <del>$1,499.00</del>
+                            </div>
+
+                            <span class="prd-product-shipping">Free Shipping</span>
+
+                            <span class="prd-product-stock">
+                                <i class="bi bi-check-circle-fill"></i>
+                                In stock
+                            </span>
+                        </article>
+
+                        <!-- Product Card 15 -->
+                        <article class="prd-product-card" data-brand="microsoft" data-price="399" data-rating="4"
+                            data-size="7-9" data-color="blue" data-memory="128gb" data-condition="like-new">
+
+                            <div class="prd-product-image">
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <img src="assets/images/product-10.webp" alt="Android Tablet">
+                            </div>
+
+                            <span class="prd-product-count">(12)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                Android Tablet 10 Inch, 128GB Storage
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$399.00</strong>
+                                <del>$499.00</del>
+                            </div>
+
+                            <span class="prd-product-shipping">Free Shipping</span>
+
+                            <span class="prd-product-stock">
+                                <i class="bi bi-check-circle-fill"></i>
+                                In stock
+                            </span>
+                        </article>
+
+
+                        <!-- Product Card 16 -->
+                        <article class="prd-product-card" data-brand="pcloudphone" data-price="749" data-rating="3"
+                            data-size="9-10" data-color="red" data-memory="256gb" data-condition="open-box">
+
+                            <div class="prd-product-image">
+                                <button type="button" class="prd-wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <span class="prd-product-out">OUT OF STOCK</span>
+
+                                <img src="assets/images/gaming.webp" alt="Smartphone Pro">
+                            </div>
+
+                            <span class="prd-product-count">(7)</span>
+
+                            <a href="product_details.html" class="prd-product-name">
+                                Smartphone Pro 5G, 256GB
+                            </a>
+
+                            <div class="prd-product-price">
+                                <strong>$749.00</strong>
+                            </div>
+
+                            <span class="prd-product-shipping">Free Shipping</span>
+
+                            <span class="prd-product-stock out-stock">
+                                <i class="bi bi-x-circle-fill"></i>
+                                OUT OF STOCK
+                            </span>
+                        </article>
+
+
+
+                    </div>
+                    <div class="prd-no-products" id="prd-no-products">No products found for the selected filters.</div>
+                    <div class="prd-pagination es-reveal-scale" id="prd-pagination">
+
+                        <button type="button" class="active" disabled>1</button>
+
+                        <button type="button">2</button>
+
+                        <button type="button">3</button>
+
+                        <button type="button">4</button>
+
+                        <button type="button">5</button>
+
+                        <button type="button">20</button>
+
+                        <a href="404.html" class="prd-next-btn">
+                            Next
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Product Listing End --->
+
+
+    <div data-component="footer"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/product.js"></script>
+</body>
+
+</html>

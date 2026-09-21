@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Stackly Electronic Store</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="es-dashboard">
+
+        <!-- Sidebar Overlay -->
+        <div class="es-sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Sidebar -->
+        <aside class="es-sidebar" id="esSidebar">
+
+            <!-- Sidebar Header -->
+            <div class="es-sidebar-header">
+
+                <a href="index.html" class="es-navbar-brand">
+
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Electronic Store"
+                        class="es-navbar-brand-logo">
+
+                    <div class="es-navbar-brand-text">
+
+                        <span class="es-navbar-brand-title">
+                            Stackly
+                        </span>
+
+                        <span class="es-navbar-brand-subtitle">
+                            Electronic Store
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <button type="button" class="es-sidebar-close" id="sidebarClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+
+            </div>
+
+            <!-- Mobile Email -->
+            <div class="es-sidebar-user">
+
+                <div class="es-sidebar-user-icon">
+                    <img src="assets/images/profile-2.webp" alt="">
+                </div>
+
+                <div class="es-sidebar-user-details">
+                    <span>Logged in as</span>
+                    <strong id="sidebarEmail">user@example.com</strong>
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <nav class="es-sidebar-nav">
+
+                <a href="client-dashboard.html" class="es-sidebar-link">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="client-orders.html" class="es-sidebar-link active">
+                    <i class="bi bi-bag-check"></i>
+                    <span>Orders</span>
+                </a>
+
+                <a href="client-payment.html" class="es-sidebar-link">
+                    <i class="bi bi-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a href="client-profile.html" class="es-sidebar-link">
+                    <i class="bi bi-person"></i>
+                    <span>Profile</span>
+                </a>
+
+                <a href="#" class="es-sidebar-link es-logout-link" id="logoutBtn">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Wrapper -->
+        <div class="es-main-wrapper">
+
+            <!-- Topbar -->
+            <header class="es-topbar">
+
+                <div class="es-topbar-left">
+
+                    <!-- Three Dot Menu -->
+                    <button type="button" class="es-menu-toggle" id="sidebarToggle">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="es-dashboard-title">
+                        <h1 id="dashboardTitle">Dashboard</h1>
+                        <p>Welcome back</p>
+                    </div>
+
+                </div>
+
+                <div class="es-topbar-right">
+
+                    <!-- Desktop / Tablet Email -->
+                    <div class="es-topbar-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="topbarEmail">user@example.com</span>
+                    </div>
+
+                    <!-- Profile -->
+                    <a href="-client-profile.html" class="es-profile-box">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                    </a>
+
+                </div>
+
+            </header>
+
+            <main class="es-dashboard-content">
+
+                <!-- Orders Page -->
+                <section class="es-client-orders">
+
+                    <!-- Page Header -->
+                    <div class="es-page-heading">
+
+                        <div>
+                            <h2>My Orders</h2>
+                            <p>View and track all your orders.</p>
+                        </div>
+
+                        <a href="index.html" class="es-primary-btn">
+                            <i class="bi bi-cart"></i>
+                            Continue Shopping
+                        </a>
+
+                    </div>
+
+
+                    <!-- Order Statistics -->
+                    <div class="es-order-stats">
+
+                        <div class="es-order-stat-card">
+                            <div class="es-order-stat-icon">
+                                <i class="bi bi-bag-check"></i>
+                            </div>
+
+                            <div>
+                                <span>Total Orders</span>
+                                <h3 id="totalOrders">6</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="es-order-stat-card">
+                            <div class="es-order-stat-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+
+                            <div>
+                                <span>Pending Orders</span>
+                                <h3 id="pendingOrders">2</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="es-order-stat-card">
+                            <div class="es-order-stat-icon">
+                                <i class="bi bi-check-circle"></i>
+                            </div>
+
+                            <div>
+                                <span>Delivered Orders</span>
+                                <h3 id="deliveredOrders">3</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="es-order-stat-card">
+                            <div class="es-order-stat-icon">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+
+                            <div>
+                                <span>Cancelled Orders</span>
+                                <h3 id="cancelledOrders">1</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Orders Card -->
+                    <div class="es-orders-card">
+
+                        <!-- Filter Header -->
+                        <div class="es-orders-filter-header">
+
+                            <div>
+                                <h4>Order History</h4>
+                                <p>Search and filter your orders.</p>
+                            </div>
+
+                            <span class="es-order-count" id="orderCount">
+                                6 Orders
+                            </span>
+
+                        </div>
+
+
+                        <!-- Search and Filters -->
+                        <div class="es-orders-filters">
+
+                            <div class="es-order-search">
+
+                                <i class="bi bi-search"></i>
+
+                                <input type="search" id="orderSearch" placeholder="Search order ID or product...">
+
+                            </div>
+
+
+                            <select id="orderStatusFilter" class="es-order-filter">
+
+                                <option value="all">All Status</option>
+                                <option value="pending">Pending</option>
+                                <option value="processing">Processing</option>
+                                <option value="delivered">Delivered</option>
+                                <option value="cancelled">Cancelled</option>
+
+                            </select>
+
+
+                            <select id="orderDateFilter" class="es-order-filter">
+
+                                <option value="all">All Dates</option>
+                                <option value="2026-09">September 2026</option>
+                                <option value="2026-08">August 2026</option>
+                                <option value="2026-07">July 2026</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Orders Table -->
+                        <div class="es-orders-table-wrapper">
+
+                            <table class="es-client-orders-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Product</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody id="ordersTableBody">
+
+                                    <!-- Order 1 -->
+                                    <tr data-status="delivered" data-date="2026-09-20">
+
+                                        <td>
+                                            <strong>#STK1025</strong>
+                                        </td>
+
+                                        <td>
+                                            <div class="es-order-product">
+                                                <img src="assets/images/headphone.webp" alt="Wireless Headphones">
+
+                                                <span>Wireless Headphones</span>
+                                            </div>
+                                        </td>
+
+                                        <td>20 Sep 2026</td>
+
+                                        <td>₹2,499</td>
+
+                                        <td>
+                                            <span class="es-order-badge es-badge-delivered">
+                                                Delivered
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <a href="404.html" class="es-view-order-btn">
+                                                View
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- Order 2 -->
+                                    <tr data-status="pending" data-date="2026-09-18">
+
+                                        <td>
+                                            <strong>#STK1024</strong>
+                                        </td>
+
+                                        <td>
+                                            <div class="es-order-product">
+                                                <img src="assets/images/smart-watch.webp" alt="Smart Watch">
+
+                                                <span>Smart Watch</span>
+                                            </div>
+                                        </td>
+
+                                        <td>18 Sep 2026</td>
+
+                                        <td>₹3,999</td>
+
+                                        <td>
+                                            <span class="es-order-badge es-badge-pending">
+                                                Pending
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <a href="404.html" class="es-view-order-btn">
+                                                View
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- Order 3 -->
+                                    <tr data-status="processing" data-date="2026-09-15">
+
+                                        <td>
+                                            <strong>#STK1023</strong>
+                                        </td>
+
+                                        <td>
+                                            <div class="es-order-product">
+                                                <img src="assets/images/laptop-02.webp" alt="Bluetooth Speaker">
+
+                                                <span>Bluetooth Speaker</span>
+                                            </div>
+                                        </td>
+
+                                        <td>15 Sep 2026</td>
+
+                                        <td>₹1,899</td>
+
+                                        <td>
+                                            <span class="es-order-badge es-badge-processing">
+                                                Processing
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <a href="404.html" class="es-view-order-btn">
+                                                View
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- Order 4 -->
+                                    <tr data-status="delivered" data-date="2026-08-28">
+
+                                        <td>
+                                            <strong>#STK1022</strong>
+                                        </td>
+
+                                        <td>
+                                            <div class="es-order-product">
+                                                <img src="assets/images/gaming-pc.webp" alt="Gaming Keyboard">
+
+                                                <span>Gaming Keyboard</span>
+                                            </div>
+                                        </td>
+
+                                        <td>28 Aug 2026</td>
+
+                                        <td>₹2,799</td>
+
+                                        <td>
+                                            <span class="es-order-badge es-badge-delivered">
+                                                Delivered
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <a href="404.html" class="es-view-order-btn">
+                                                View
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- Order 5 -->
+                                    <tr data-status="cancelled" data-date="2026-08-20">
+
+                                        <td>
+                                            <strong>#STK1021</strong>
+                                        </td>
+
+                                        <td>
+                                            <div class="es-order-product">
+                                                <img src="assets/images/product-02.webp" alt="USB-C Hub">
+
+                                                <span>USB-C Hub</span>
+                                            </div>
+                                        </td>
+
+                                        <td>20 Aug 2026</td>
+
+                                        <td>₹1,299</td>
+
+                                        <td>
+                                            <span class="es-order-badge es-badge-cancelled">
+                                                Cancelled
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <a href="404.html" class="es-view-order-btn">
+                                                View
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+
+                                    <!-- Order 6 -->
+                                    <tr data-status="delivered" data-date="2026-07-14">
+
+                                        <td>
+                                            <strong>#STK1020</strong>
+                                        </td>
+
+                                        <td>
+                                            <div class="es-order-product">
+                                                <img src="assets/images/mouse.webp" alt="Wireless Mouse">
+
+                                                <span>Wireless Mouse</span>
+                                            </div>
+                                        </td>
+
+                                        <td>14 Jul 2026</td>
+
+                                        <td>₹899</td>
+
+                                        <td>
+                                            <span class="es-order-badge es-badge-delivered">
+                                                Delivered
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <a href="404.html" class="es-view-order-btn">
+                                                View
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+
+                        <!-- Empty State -->
+                        <div class="es-orders-empty" id="ordersEmptyState">
+
+                            <i class="bi bi-search"></i>
+
+                            <h5>No Orders Found</h5>
+
+                            <p>Try changing your search or filter options.</p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dashboard JS -->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-Orders.js"></script>
+
+</body>
+
+</html>

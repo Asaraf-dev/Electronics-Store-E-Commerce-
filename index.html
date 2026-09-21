@@ -1,0 +1,884 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Electronics Store</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Stackly Electronics Loader Start -->
+  <div class="es-ldr-loader" id="esLdrLoader" aria-label="Loading website">
+    <div class="es-ldr-glow"></div>
+
+    <div class="es-ldr-particles" id="esLdrParticles"></div>
+
+    <div class="es-ldr-content">
+
+      <div class="es-ldr-logo">
+        <div class="es-ldr-logo-ring es-ldr-ring-one"></div>
+        <div class="es-ldr-logo-ring es-ldr-ring-two"></div>
+
+        <div class="es-ldr-logo-icon">
+          <i class="bi bi-cpu"></i>
+        </div>
+
+        <span class="es-ldr-circuit es-ldr-circuit-one"></span>
+        <span class="es-ldr-circuit es-ldr-circuit-two"></span>
+        <span class="es-ldr-circuit es-ldr-circuit-three"></span>
+        <span class="es-ldr-circuit es-ldr-circuit-four"></span>
+      </div>
+
+      <h1 class="es-ldr-brand">STACKLY</h1>
+
+      <p class="es-ldr-tagline">Electronic Store</p>
+
+      <div class="es-ldr-message-wrapper">
+        <p class="es-ldr-message" id="esLdrMessage">
+          Powering up your experience...
+        </p>
+      </div>
+
+      <div class="es-ldr-dots" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+  <!-- Stackly Electronics Loader End -->
+
+  <div data-component="navbar"></div>
+
+  <!--- Hero Section Start --->
+  <section class="es-ind-hero es-reveal">
+    <div class="container">
+      <div class="es-ind-hero-wrapper">
+        <aside class="es-ind-hero-category">
+          <div class="es-ind-hero-category-header">
+            <h2 class="es-ind-hero-category-title">Category</h2>
+          </div>
+          <div class="es-ind-hero-category-list">
+            <a href="product.html?category=laptops" class="es-ind-hero-category-item">
+              <span class="es-ind-hero-category-icon"><i class="bi bi-laptop"></i></span>
+              <span class="es-ind-hero-category-name">Laptops</span>
+              <span class="es-ind-hero-category-count">1</span>
+            </a>
+            <a href="product.html?category=computers" class="es-ind-hero-category-item">
+              <span class="es-ind-hero-category-icon"><i class="bi bi-pc-display"></i></span>
+              <span class="es-ind-hero-category-name">PC &amp; Computers</span>
+              <span class="es-ind-hero-category-count">2</span>
+            </a>
+            <a href="product.html?category=mobile" class="es-ind-hero-category-item">
+              <span class="es-ind-hero-category-icon"><i class="bi bi-phone"></i></span>
+              <span class="es-ind-hero-category-name">Cell Phones</span>
+              <span class="es-ind-hero-category-count">3</span>
+            </a>
+            <a href="product.html?category=tablets" class="es-ind-hero-category-item">
+              <span class="es-ind-hero-category-icon"><i class="bi bi-tablet"></i></span>
+              <span class="es-ind-hero-category-name">Tablets</span>
+              <span class="es-ind-hero-category-count">4</span>
+            </a>
+            <a href="product.html?category=cameras" class="es-ind-hero-category-item">
+              <span class="es-ind-hero-category-icon"><i class="bi bi-camera"></i></span>
+              <span class="es-ind-hero-category-name">Cameras</span>
+              <span class="es-ind-hero-category-count">5</span>
+            </a>
+          </div>
+        </aside>
+        <!--- Hero Banner Slider --->
+        <div class="es-ind-hero-banner" id="es-ind-hero-slider">
+          <div class="es-ind-hero-slide active" data-slide="0">
+            <img src="assets/images/hero-banner.webp" alt="Latest Electronics Deals" class="es-ind-hero-image">
+            <div class="es-ind-hero-overlay"></div>
+            <div class="es-ind-hero-content">
+              <h1 class="es-ind-hero-title">Don’t miss amazing<br>grocery deals</h1>
+              <p class="es-ind-hero-subtitle">Sign up for the daily newsletter</p>
+              <form class="es-ind-hero-newsletter">
+                <div class="es-ind-hero-newsletter-field">
+                  <i class="bi bi-send"></i>
+                  <input type="email" required placeholder="Your email address" aria-label="Your email address">
+                </div>
+                <button type="submit" class="es-ind-hero-newsletter-button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="es-ind-hero-slide" data-slide="1">
+            <img src="assets/images/hero-banner.webp" alt="Smartphone Deals" class="es-ind-hero-image">
+            <div class="es-ind-hero-overlay"></div>
+            <div class="es-ind-hero-content">
+              <h1 class="es-ind-hero-title">Power up your world<br>with smart devices</h1>
+              <p class="es-ind-hero-subtitle">Find the latest smartphones and smart gadgets</p>
+              <a href="product.html"><button class="ind-hero-btn-2">Buy Now</button></a>
+            </div>
+          </div>
+          <div class="es-ind-hero-dots">
+            <button type="button" class="es-ind-hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button type="button" class="es-ind-hero-dot" data-slide="1" aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Newsletter Success Popup --->
+  <div class="es-ind-hero-popup" id="es-ind-hero-popup">
+    <div class="es-ind-hero-popup-overlay"></div>
+    <div class="es-ind-hero-popup-content">
+      <button type="button" class="es-ind-hero-popup-close" id="es-ind-hero-popup-close" aria-label="Close"><i
+          class="bi bi-x-lg"></i></button>
+      <div class="es-ind-hero-popup-icon"><i class="bi bi-check-lg"></i></div>
+      <h3 class="es-ind-hero-popup-title">Successfully Subscribed!</h3>
+      <p class="es-ind-hero-popup-text">Thank you for subscribing to our newsletter. You’ll receive our latest updates
+        and offers.</p>
+      <button type="button" class="es-ind-hero-popup-button" id="es-ind-hero-popup-button">OK</button>
+    </div>
+  </div>
+  <!--- Hero Section End --->
+
+  <!--- Featured Brands Section Start --->
+  <section class="es-ind-brand-category es-reveal">
+    <div class="container">
+      <div class="es-ind-brand-category-wrapper">
+        <!-- Featured Brands -->
+        <div class="es-ind-featured-brands">
+          <div class="es-ind-featured-brands-header">
+            <h2 class="es-ind-featured-brands-title">
+              Featured Brands
+            </h2>
+            <a href="product.html" class="es-ind-section-view-all">
+              View All
+            </a>
+          </div>
+          <div class="es-ind-featured-brands-grid es-reveal-stagger">
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo4.webp" alt="JMYX">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo5.webp" alt="Digitek">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo1.webp" alt="Teak React JS">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo2.webp" alt="Grafbase">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo3.webp" alt="MSI">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo6.webp" alt="Ohbear">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo7.webp" alt="OAK">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo8.webp" alt="Snyk">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo9.webp" alt="Sonex">
+            </a>
+            <a href="product.html" class="es-ind-featured-brands-item">
+              <img src="assets/images/brands/logo10.webp" alt="Stropi">
+            </a>
+          </div>
+        </div>
+
+        <!-- Top Categories -->
+        <div class="es-ind-top-categories-grid es-reveal-stagger">
+          <div class="es-ind-top-categories-header">
+            <h2 class="es-ind-top-categories-title">
+              Top Categories
+            </h2>
+            <a href="product.html" class="es-ind-section-view-all">
+              View All
+            </a>
+          </div>
+          <div class="es-ind-top-categories-grid">
+            <a href="product.html" class="es-ind-top-category-item">
+              <div class="es-ind-top-category-image">
+                <img src="assets/images/laptops.webp" alt="Laptops">
+              </div>
+              <span>Laptops</span>
+            </a>
+            <a href="product.html" class="es-ind-top-category-item">
+              <div class="es-ind-top-category-image">
+                <img src="assets/images/pc-gaming.webp" alt="PC Gaming">
+              </div>
+              <span>PC Gaming</span>
+            </a>
+            <a href="product.html" class="es-ind-top-category-item">
+              <div class="es-ind-top-category-image">
+                <img src="assets/images/headphones.webp" alt="Headphones">
+              </div>
+              <span>Headphones</span>
+            </a>
+            <a href="product.html" class="es-ind-top-category-item">
+              <div class="es-ind-top-category-image">
+                <img src="assets/images/monitors.webp" alt="Monitors">
+              </div>
+              <span>Monitors</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Featured Brands Section End --->
+
+  <!--- Deals Of The Day Section Start --->
+  <section class="es-ind-deals es-reveal">
+    <div class="container">
+      <div class="es-ind-deals-wrapper">
+        <div class="es-ind-deals-header">
+          <h2 class="es-ind-deals-title">Deals Of The Day</h2>
+        </div>
+        <div class="es-ind-deals-content">
+          <div class="es-ind-deals-gallery es-reveal-left">
+            <div class="es-ind-deals-thumbs">
+              <button type="button" class="es-ind-deals-thumb active"><img src="assets/images/prod5.webp"
+                  alt="Product image 1"></button>
+              <button type="button" class="es-ind-deals-thumb"><img src="assets/images/prod6.webp"
+                  alt="Product image 2"></button>
+              <button type="button" class="es-ind-deals-thumb"><img src="assets/images/prod7.webp"
+                  alt="Product image 3"></button>
+              <button type="button" class="es-ind-deals-thumb"><img src="assets/images/prod8.webp"
+                  alt="Product image 4"></button>
+            </div>
+            <div class="es-ind-deals-main-image">
+              <img src="assets/images/prod5.webp" alt="Xiaomi Redmi Note 11 Pro 256GB 2023 Black"
+                id="es-ind-deals-main-image">
+              <span class="es-ind-deals-discount"><small>Save</small><strong>$199.00</strong></span>
+              <button type="button" class="es-ind-deals-wishlist" aria-label="Add to wishlist"><i
+                  class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="es-ind-deals-info es-reveal-right">
+            <h3 class="es-ind-deals-product-title">Xioma Redmi Note 11 Pro 256GB 2023, Black Smartphone</h3>
+            <div class="es-ind-deals-price"><span class="es-ind-deals-current-price">$569.00</span><span
+                class="es-ind-deals-old-price">$759.00</span></div>
+            <ul class="es-ind-deals-features">
+              <li>Intel LGA 1700 Socket: Supports 13th &amp; 12th Gen Intel Core</li>
+              <li>DDR5 Compatible: 4*SMD DIMMs with XMP 3.0 Memory</li>
+              <li>Commanding Power Design: Twin 16+1+2 Phases Digital VRM</li>
+            </ul>
+            <div class="es-ind-deals-countdown">
+              <strong>HURRY UP!</strong>
+              <span>PROMOTION WILL<br>EXPIRES IN</span>
+              <div class="es-ind-deals-timer" id="es-ind-deals-timer">
+                <span><b>00</b><small>Days</small></span><em>:</em><span><b>00</b><small>Hours</small></span><em>:</em><span><b>00</b><small>Min</small></span><em>:</em><span><b>00</b><small>Sec</small></span>
+              </div>
+            </div>
+            <div class="es-ind-deals-stock">
+              <div class="es-ind-deals-progress"><span></span></div>
+              <div class="es-ind-deals-sold">Sold: <strong>26/75</strong></div>
+            </div>
+          </div>
+          <div class="es-ind-deals-side-products">
+            <a href="product_details.html" class="es-ind-deals-side-product"><img src="assets/images/prod28.webp"
+                alt="Featured smartphone"></a>
+            <a href="product_details.html" class="es-ind-deals-side-product"><img src="assets/images/prod30.webp"
+                alt="Featured tablet"></a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--- Deals Of The Day Section End --->
+
+  <!--- Pre Order Banner  Section Start --->
+  <section class="es-ind-preorder es-reveal-scale">
+    <div class="container-fluid">
+      <div class="es-ind-preorder-banner">
+        <div class="es-ind-preorder-content">
+          <span class="es-ind-preorder-label">Pre Order</span>
+          <span class="es-ind-preorder-caption">Be The First To Own</span>
+          <span class="es-ind-preorder-price">From $399</span>
+        </div>
+        <div class="es-ind-preorder-visual">
+          <div class="es-ind-preorder-visual-shape"></div>
+          <img src="assets/images/preorder-watch.webp" alt="Apple Watch Series 8" class="es-ind-preorder-watch">
+        </div>
+        <div class="es-ind-preorder-product">
+          <span class="es-ind-preorder-product-name">Apple Watch Sport<br>Series 8</span>
+          <h2 class="es-ind-preorder-title">A healthy leap ahead</h2>
+        </div>
+        <a href="product.html?category=smartwatch" class="es-ind-preorder-button">Discover Now</a>
+      </div>
+    </div>
+  </section>
+  <!--- Pre Order Banner  Section End --->
+
+  <!--- Best Seller Products Section Start --->
+  <section class="es-ind-product-tabs es-reveal">
+    <div class="container">
+      <div class="es-ind-product-tabs-wrapper">
+        <div class="es-ind-product-tabs-header">
+          <div class="es-ind-product-tabs-nav">
+            <button type="button" class="es-ind-product-tab active" data-tab="best-seller">Best Seller</button>
+            <button type="button" class="es-ind-product-tab" data-tab="new-in">New In</button>
+            <button type="button" class="es-ind-product-tab" data-tab="popular">Popular</button>
+          </div>
+          <a href="product.html" class="es-ind-product-tabs-view-all">View All</a>
+        </div>
+        <div class="es-ind-product-tabs-content">
+          <button type="button" class="es-ind-product-tabs-arrow es-ind-product-tabs-prev" aria-label="Previous"><i
+              class="bi bi-chevron-left"></i></button>
+          <div class="es-ind-product-slider">
+            <div class="es-ind-product-track">
+              <div class="es-ind-product-panel active" data-panel="best-seller">
+                <div class="es-ind-product-grid es-reveal-stagger">
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image">
+                      <img src="assets/images/product-01.webp" alt="iPod Pro 12.9 Inch M1 2023">
+                    </a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">iPod Pro 12.9 Inch M1 2023, 64GB + Wifi,
+                      GPS</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$569.00</span><span
+                        class="es-ind-product-old">$759.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock available"><i class="bi bi-check-circle-fill"></i> In stock</span>
+                  </div>
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image">
+                      <img src="assets/images/product-02.webp" alt="uLosk Mini case">
+                    </a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">uLosk Mini case 2.0, Xenon f/10 / 32GB /
+                      SSD 512GB / VGA 8GB</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$1,729.00</span><span
+                        class="es-ind-product-old">$759.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock unavailable"><i class="bi bi-x-circle-fill"></i> Out of
+                      stock</span>
+                  </div>
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image">
+                      <img src="assets/images/product-03.webp" alt="Oplpo Watch Series 8 GPS">
+                    </a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Oplpo Watch Series 8 GPS + Cellular
+                      Stainless Steel Case with Milanese Loop</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$979.00</span>
+                    </div>
+                    <span class="es-ind-product-shipping">2.98 Shipping</span>
+                    <span class="es-ind-product-stock preorder">PRE - ORDER</span>
+                  </div>
+                </div>
+              </div>
+              <div class="es-ind-product-panel" data-panel="new-in">
+                <div class="es-ind-product-grid es-reveal-stagger">
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image"><img
+                        src="assets/images/sony-wh1000xm6.webp" alt="New Electronics Product"></a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Premium Wireless Smart Device</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$699.00</span><span
+                        class="es-ind-product-old">$829.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock available"><i class="bi bi-check-circle-fill"></i> In stock</span>
+                  </div>
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image"><img src="assets/images/laptops.webp"
+                        alt="New Laptop"></a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Ultra Slim Performance Laptop</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$1,299.00</span><span
+                        class="es-ind-product-old">$1,499.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock available"><i class="bi bi-check-circle-fill"></i> In stock</span>
+                  </div>
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image"><img
+                        src="assets/images/smart-watch.webp" alt="New Smart Watch"></a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Latest Smart Watch Series</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$399.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock preorder">PRE - ORDER</span>
+                  </div>
+                </div>
+              </div>
+              <div class="es-ind-product-panel" data-panel="popular">
+                <div class="es-ind-product-grid">
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image"><img
+                        src="assets/images/smart-watch.webp" alt="Popular Smartphone"></a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Popular Flagship Smartphone</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$899.00</span><span
+                        class="es-ind-product-old">$999.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock available"><i class="bi bi-check-circle-fill"></i> In stock</span>
+                  </div>
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image"><img src="assets/images/prod30.webp"
+                        alt="Popular Tablet"></a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Premium Performance Tablet</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$749.00</span><span
+                        class="es-ind-product-old">$849.00</span></div>
+                    <span class="es-ind-product-shipping">Free Shipping</span>
+                    <span class="es-ind-product-stock available"><i class="bi bi-check-circle-fill"></i> In stock</span>
+                  </div>
+                  <div class="es-ind-product-item">
+                    <a href="product_details.html" class="es-ind-product-image"><img
+                        src="assets/images/airpods-pro-2.webp" alt="Popular Headphones"></a>
+                    <div class="es-ind-product-divider"></div>
+                    <a href="product_details.html" class="es-ind-product-title">Premium Wireless Headphones</a>
+                    <div class="es-ind-product-price"><span class="es-ind-product-current">$299.00</span></div>
+                    <span class="es-ind-product-shipping">2.98 Shipping</span>
+                    <span class="es-ind-product-stock preorder">PRE - ORDER</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="es-ind-product-tabs-arrow es-ind-product-tabs-next" aria-label="Next"><i
+              class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Best Seller Products Section End --->
+
+  <!--- Brand New For You Section Start --->
+  <section class="es-ind-brand-new es-reveal">
+    <div class="container">
+      <div class="es-ind-brand-new-header">
+        <h2 class="es-ind-brand-new-title">Brand New For You</h2>
+      </div>
+      <div class="es-ind-brand-new-grid es-reveal-stagger">
+        <article class="es-ind-brand-new-card">
+          <a href="product_details.html" class="es-ind-brand-new-image">
+            <img src="assets/images/brand-new-01.webp" alt="Zumac Steel Computer Case">
+          </a>
+          <div class="es-ind-brand-new-content">
+            <a href="product_details.html" class="es-ind-brand-new-name">Zumac Steel Computer Case</a>
+            <p class="es-ind-brand-new-description">And an option to upgrade every three years</p>
+            <a href="product_details.html" class="es-ind-brand-new-button">Shop Now</a>
+          </div>
+        </article>
+        <article class="es-ind-brand-new-card">
+          <a href="product_details.html" class="es-ind-brand-new-image">
+            <img src="assets/images/brand-new-02.webp" alt="Summer Sale with Sale up to 50% OFF for Foam Gaming Chair">
+          </a>
+          <div class="es-ind-brand-new-content">
+            <a href="product_details.html" class="es-ind-brand-new-name">Summer Sale with Sale up to 50% OFF for Foam
+              Gaming Chair.</a>
+            <p class="es-ind-brand-new-description">Limited time offer. Hurry up</p>
+            <a href="product_details.html" class="es-ind-brand-new-button">Shop Now</a>
+          </div>
+        </article>
+        <article class="es-ind-brand-new-card">
+          <a href="product_details.html" class="es-ind-brand-new-image">
+            <img src="assets/images/brand-new-03.webp" alt="FantaxIS Gaming Chair">
+          </a>
+          <div class="es-ind-brand-new-content">
+            <a href="product_details.html" class="es-ind-brand-new-name">Summer Sale with Sale up to 50% OFF for Foam
+              Gaming Chair.</a>
+            <p class="es-ind-brand-new-description">Limited time offer. Hurry up</p>
+            <a href="product_details.html" class="es-ind-brand-new-button">Shop Now</a>
+          </div>
+        </article>
+        <article class="es-ind-brand-new-card">
+          <a href="product_details.html" class="es-ind-brand-new-image">
+            <img src="assets/images/brand-new-04.webp" alt="iPad Pro Mini 6">
+          </a>
+          <div class="es-ind-brand-new-content">
+            <a href="product_details.html" class="es-ind-brand-new-name">iPed Pro Mini 6 - Powerfull in hand</a>
+            <p class="es-ind-brand-new-description">From $19.99/month for 36 months. $280.35 final payment due in month
+              37</p>
+            <a href="product_details.html" class="es-ind-brand-new-button">Shop Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!--- Brand New For You Section End --->
+
+  <!--- Top Cellphones & Tablets Section Start --->
+  <section class="es-ind-cellphones es-reveal">
+    <div class="container">
+      <div class="es-ind-cellphones-header">
+        <h2 class="es-ind-cellphones-title">Top Cellphones &amp; Tablets</h2>
+        <a href="product.html" class="es-ind-cellphones-view-all">View All</a>
+      </div>
+      <div class="es-ind-cellphones-top">
+        <a href="product.html?category=mobile" class="es-ind-cellphones-promo">
+          <img src="assets/images/mobile-promo.webp" alt="Redmi Note 12 Pro+ 5G" class="es-ind-cellphones-promo-image">
+          <div class="es-ind-cellphones-promo-overlay"></div>
+          <div class="es-ind-cellphones-promo-content">
+            <h3 class="es-ind-cellphones-promo-title">Redmi Note<br>12 Pro+ 5G</h3>
+            <p class="es-ind-cellphones-promo-text">The rise to the challenge</p>
+            <span class="es-ind-cellphones-promo-button">Shop Now</span>
+          </div>
+        </a>
+        <div class="es-ind-cellphones-categories es-reveal-stagger">
+          <a href="product.html?category=iphone" class="es-ind-cellphones-category">
+            <div class="es-ind-cellphones-category-content">
+              <strong>iPhone (iOS)</strong>
+              <span>74 Items</span>
+            </div>
+            <img src="assets/images/iphone.webp" alt="iPhone">
+          </a>
+          <a href="product.html?category=android" class="es-ind-cellphones-category">
+            <div class="es-ind-cellphones-category-content">
+              <strong>Android</strong>
+              <span>35 Items</span>
+            </div>
+            <img src="assets/images/android.webp" alt="Android">
+          </a>
+          <a href="product.html?category=5g" class="es-ind-cellphones-category">
+            <div class="es-ind-cellphones-category-content">
+              <strong>5G Support</strong>
+              <span>12 Items</span>
+            </div>
+            <img src="assets/images/5g.webp" alt="5G Support">
+          </a>
+
+          <a href="product.html?category=gaming" class="es-ind-cellphones-category">
+            <div class="es-ind-cellphones-category-content">
+              <strong>Gaming</strong>
+              <span>9 Items</span>
+            </div>
+            <img src="assets/images/gaming.webp" alt="Gaming">
+          </a>
+          <a href="product.html?category=xiaomi" class="es-ind-cellphones-category">
+            <div class="es-ind-cellphones-category-content">
+              <strong>Xiaomi</strong>
+              <span>52 Items</span>
+            </div>
+            <img src="assets/images/xiaomi.webp" alt="Xiaomi">
+          </a>
+          <a href="product.html?category=accessories" class="es-ind-cellphones-category">
+            <div class="es-ind-cellphones-category-content">
+              <strong>Accessories</strong>
+              <span>29 Items</span>
+            </div>
+            <img src="assets/images/mobile-accessories.webp" alt="Accessories">
+          </a>
+
+        </div>
+      </div>
+      <div class="es-ind-cellphones-products es-reveal-stagger">
+        <article class="es-ind-cellphones-product">
+          <div class="es-ind-cellphones-product-image">
+            <span class="es-ind-cellphones-product-sale">SAVE<br>$190.00</span>
+            <img src="assets/images/cellphone-01.webp" alt="SROK Smart Phone 128GB">
+          </div>
+          <span class="es-ind-cellphones-product-count">(152)</span>
+          <a href="product_details.html" class="es-ind-cellphones-product-title">SROK Smart Phone 128GB, Oled Retina</a>
+          <div class="es-ind-cellphones-product-price"><span>$579.00</span><del>$859.00</del></div>
+          <span class="es-ind-cellphones-product-shipping">Free Shipping</span>
+          <span class="es-ind-cellphones-product-stock"><i class="bi bi-check-circle-fill"></i> In stock</span>
+        </article>
+        <article class="es-ind-cellphones-product">
+          <div class="es-ind-cellphones-product-image">
+            <span class="es-ind-cellphones-product-new">NEW</span>
+            <img src="assets/images/cellphone-02.webp" alt="iPad Pro Tablet">
+          </div>
+          <span class="es-ind-cellphones-product-count"> </span>
+          <a href="product_details.html" class="es-ind-cellphones-product-title">iPad Pro Tablet 2023 LTE + Wifi, GPS
+            Cellular 12.9 Inch</a>
+          <div class="es-ind-cellphones-product-price"><span>$979.00 - $1,259.00</span></div>
+          <span class="es-ind-cellphones-product-shipping">Free Shipping</span>
+          <span class="es-ind-cellphones-product-stock"><i class="bi bi-check-circle-fill"></i> In stock</span>
+        </article>
+        <article class="es-ind-cellphones-product">
+          <div class="es-ind-cellphones-product-image">
+            <img src="assets/images/prod28.webp" alt="Opd Pro 12.9 Inch">
+          </div>
+          <span class="es-ind-cellphones-product-count">(5)</span>
+          <a href="product_details.html" class="es-ind-cellphones-product-title">Opd Pro 12.9 Inch M1 2023, 64GB + Wifi,
+            GPS</a>
+          <div class="es-ind-cellphones-product-price"><span>$659.00</span></div>
+          <div class="es-ind-cellphones-product-shipping-group"><span class="es-ind-cellphones-product-shipping">Free
+              Shipping</span><span class="es-ind-cellphones-product-shipping">Free Gift</span></div>
+          <span class="es-ind-cellphones-product-stock"><i class="bi bi-check-circle-fill"></i> In stock</span>
+          <div class="es-ind-cellphones-product-mini"><img src="assets/images/prod28.webp" alt="">
+            <img src="assets/images/cellphone-01.webp" alt="">
+            <img src="assets/images/cellphone-04.webp" alt="">
+          </div>
+        </article>
+        <article class="es-ind-cellphones-product">
+          <div class="es-ind-cellphones-product-image">
+            <span class="es-ind-cellphones-product-sale">SAVE<br>$50.00</span>
+            <img src="assets/images/cellphone-04.webp" alt="Xiaomi Redmi Note 5">
+          </div>
+          <span class="es-ind-cellphones-product-count">(9)</span>
+          <a href="product_details.html" class="es-ind-cellphones-product-title">Xiaomi Redmi Note 5, 64GB</a>
+          <div class="es-ind-cellphones-product-price"><span>$1,239.00</span><del>$1,619.00</del></div>
+          <span class="es-ind-cellphones-product-shipping">Free Shipping</span>
+          <span class="es-ind-cellphones-product-stock">Contact</span>
+        </article>
+        <article class="es-ind-cellphones-product">
+          <div class="es-ind-cellphones-product-image">
+            <img src="assets/images/prod30.webp" alt="Microsoft Alpha Ultra">
+          </div>
+          <span class="es-ind-cellphones-product-count">(8)</span>
+          <a href="product_details.html" class="es-ind-cellphones-product-title">Microsoft Alpha Ultra S5 Surface 128GB
+            2022, Silver</a>
+          <div class="es-ind-cellphones-product-price"><span>$1,729.00</span></div>
+          <span class="es-ind-cellphones-product-shipping">Free Shipping</span>
+          <span class="es-ind-cellphones-product-stock">Contact</span>
+          <div class="es-ind-cellphones-product-mini"><img src="assets/images/prod30.webp" alt="">
+            <img src="assets/images/product-01.webp" alt="">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!--- Top Cellphones & Tablets Section End --->
+
+  <!--- Best Laptops & Computers Section Start --->
+  <section class="es-ind-laptops es-reveal">
+    <div class="container">
+      <div class="es-ind-laptops-header">
+        <h2 class="es-ind-laptops-title">Best Laptops &amp; Computers</h2>
+        <a href="product.html?category=laptops" class="es-ind-laptops-view-all">View All</a>
+      </div>
+      <div class="es-ind-laptops-top">
+        <a href="product.html?category=laptops" class="es-ind-laptops-promo">
+          <img src="assets/images/laptop-promo.webp" alt="Mobok 2 Superchard By M2" class="es-ind-laptops-promo-image">
+          <div class="es-ind-laptops-promo-overlay"></div>
+          <div class="es-ind-laptops-promo-content">
+            <h3 class="es-ind-laptops-promo-title">Mobok 2<br>Superchard<br><span>By M2</span></h3>
+            <p class="es-ind-laptops-promo-price">Start from <strong>$1,199</strong></p>
+          </div>
+        </a>
+        <div class="es-ind-laptops-categories es-reveal-stagger">
+          <a href="product.html?category=macbook" class="es-ind-laptops-category">
+            <div class="es-ind-laptops-category-content"><strong>Macbook</strong><span>74 Items</span></div>
+            <img src="assets/images/macbook.webp" alt="Macbook">
+          </a>
+          <a href="product.html?category=gaming-pc" class="es-ind-laptops-category">
+            <div class="es-ind-laptops-category-content"><strong>Gaming PC</strong><span>5 Items</span></div>
+            <img src="assets/images/gaming-pc.webp" alt="Gaming PC">
+          </a>
+          <a href="product.html?category=laptop-office" class="es-ind-laptops-category">
+            <div class="es-ind-laptops-category-content"><strong>Laptop Office</strong><span>22 Items</span></div>
+            <img src="assets/images/laptop-office.webp" alt="Laptop Office">
+          </a>
+          <a href="product.html?category=laptop-15" class="es-ind-laptops-category">
+            <div class="es-ind-laptops-category-content"><strong>Laptop 15&quot;</strong><span>55 Items</span></div>
+            <img src="assets/images/laptop-15.webp" alt="Laptop 15">
+          </a>
+          <a href="product.html?category=m1-2023" class="es-ind-laptops-category">
+            <div class="es-ind-laptops-category-content"><strong>M1 2023</strong><span>32 Items</span></div>
+            <img src="assets/images/m1-2023.webp" alt="M1 2023">
+          </a>
+          <a href="product.html?category=secondhand" class="es-ind-laptops-category">
+            <div class="es-ind-laptops-category-content"><strong>Secondhand</strong><span>16 Items</span></div>
+            <img src="assets/images/secondhand.webp" alt="Secondhand">
+          </a>
+        </div>
+      </div>
+      <div class="es-ind-laptops-products es-reveal-stagger">
+        <article class="es-ind-laptops-product ">
+          <div class="es-ind-laptops-product-image">
+            <span class="es-ind-laptops-product-new">NEW</span>
+            <img src="assets/images/laptop-01.webp" alt="Pineapple Macbook Pro 2022 M1">
+          </div>
+          <span class="es-ind-laptops-product-count">(152)</span>
+          <a href="product_details.html" class="es-ind-laptops-product-title">Pineapple Macbook Pro 2022 M1 / 512 GB</a>
+          <div class="es-ind-laptops-product-price"><span>$579.00</span></div>
+          <span class="es-ind-laptops-product-shipping">Free Shipping</span>
+          <span class="es-ind-laptops-product-stock"><i class="bi bi-check-circle-fill"></i> In stock</span>
+        </article>
+        <article class="es-ind-laptops-product">
+          <div class="es-ind-laptops-product-image">
+            <img src="assets/images/laptop-02.webp" alt="C&O Bluetooth Speaker">
+          </div>
+          <span class="es-ind-laptops-product-count"></span>
+          <a href="product_details.html" class="es-ind-laptops-product-title">C&amp;O Bluetooth Speaker</a>
+          <div class="es-ind-laptops-product-price"><span>$979.00</span></div>
+          <span class="es-ind-laptops-product-shipping">Free Shipping</span>
+          <span class="es-ind-laptops-product-stock"><i class="bi bi-check-circle-fill"></i> In stock</span>
+          <div class="es-ind-laptops-product-mini"><img src="assets/images/laptop-02.webp" alt="">
+            <img src="assets/images/laptop-02-2.webp" alt="">
+          </div>
+        </article>
+        <article class="es-ind-laptops-product">
+          <div class="es-ind-laptops-product-image">
+            <span class="es-ind-laptops-product-count-badge">(5)</span>
+            <img src="assets/images/laptop-03.webp" alt="Gigaby Custome Case">
+          </div>
+          <span class="es-ind-laptops-product-count">(5)</span>
+          <a href="product_details.html" class="es-ind-laptops-product-title">Gigaby Custome Case, i7/16GB / SSD
+            256GB</a>
+          <div class="es-ind-laptops-product-price"><span>$1,259.00</span></div>
+          <div class="es-ind-laptops-product-shipping-group"><span class="es-ind-laptops-product-shipping">Free
+              Shipping</span><span class="es-ind-laptops-product-shipping">Free Gift</span></div>
+          <span class="es-ind-laptops-product-stock"><i class="bi bi-check-circle-fill"></i> In stock</span>
+        </article>
+        <article class="es-ind-laptops-product">
+          <div class="es-ind-laptops-product-image">
+            <span class="es-ind-laptops-product-sale">SAVE<br>$59.00</span>
+            <img src="assets/images/laptop-04.webp" alt="BEOS PC Gaming Case">
+          </div>
+          <span class="es-ind-laptops-product-count">(9)</span>
+          <a href="product_details.html" class="es-ind-laptops-product-title">BEOS PC Gaming Case</a>
+          <div class="es-ind-laptops-product-price"><span>$1,239.00</span><del>$1,619.00</del></div>
+          <span class="es-ind-laptops-product-shipping">2.98 Shipping</span>
+          <span class="es-ind-laptops-product-stock">Contact</span>
+        </article>
+        <article class="es-ind-laptops-product">
+          <div class="es-ind-laptops-product-image">
+            <img src="assets/images/laptop-05.webp" alt="aMoc All-in-one Computer M1">
+          </div>
+          <span class="es-ind-laptops-product-count">(8)</span>
+          <a href="product_details.html" class="es-ind-laptops-product-title">aMoc All-in-one Computer M1</a>
+          <div class="es-ind-laptops-product-price"><span>$1,729.00</span></div>
+          <span class="es-ind-laptops-product-shipping">Free Shipping</span>
+          <span class="es-ind-laptops-product-stock">Contact</span>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!--- Best Laptops & Computers Section End --->
+
+  <!--- Promotional Cards Section Start --->
+  <section class="es-ind-promotions es-reveal">
+    <div class="container">
+      <div class="es-ind-promotions-grid es-reveal-stagger">
+        <a href="product.html?category=massage-chair" class="es-ind-promo-card es-ind-promo-left">
+          <div class="es-ind-promo-content">
+            <span class="es-ind-promo-title">Massage Chair<br>Luxury</span>
+            <span class="es-ind-promo-description">Fuka Relax Full Body<br>Massage Chair</span>
+          </div>
+          <div class="es-ind-promo-image">
+            <img src="assets/images/promo-massage-chair.webp" alt="Massage Chair Luxury">
+          </div>
+        </a>
+        <a href="product.html?category=smartphones" class="es-ind-promo-card es-ind-promo-right">
+          <div class="es-ind-promo-content">
+            <span class="es-ind-promo-title">Smart Technology<br>Collection</span>
+            <span class="es-ind-promo-description">Latest smartphones &amp;<br>smart devices</span>
+          </div>
+          <div class="es-ind-promo-image">
+            <img src="assets/images/promo-smart-devices.webp" alt="Smart Technology Collection">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--- Promotional Cards Section end --->
+
+  <!--- Your Recently Viewed Section Start --->
+  <section class="es-ind-recently-viewed es-reveal">
+    <div class="container">
+      <div class="es-ind-recently-viewed-header">
+        <h2 class="es-ind-recently-viewed-title">Your Recently Viewed</h2>
+      </div>
+      <div class="es-ind-recently-viewed-grid es-reveal-stagger">
+        <a href="product_details.html" class="es-ind-recently-viewed-item">
+          <div class="es-ind-recently-viewed-image">
+            <span class="es-ind-recently-viewed-badge">NEW</span>
+            <img src="assets/images/laptops.webp" alt="Microte Surface 2.0 Laptop">
+          </div>
+          <div class="es-ind-recently-viewed-info">
+            <h3 class="es-ind-recently-viewed-name">Microte Surface 2.0<br>Laptop</h3>
+            <span class="es-ind-recently-viewed-price">$979.00</span>
+          </div>
+          <!--<span class="es-ind-recently-viewed-dot"></span>-->
+        </a>
+        <a href="product_details.html" class="es-ind-recently-viewed-item">
+          <div class="es-ind-recently-viewed-image">
+            <span class="es-ind-recently-viewed-badge">NEW</span>
+            <img src="assets/images/recent-02.webp" alt="Xomie Redmi 8 Sport Water Resitance Watch">
+          </div>
+          <div class="es-ind-recently-viewed-info">
+            <span class="es-ind-recently-viewed-count">(152)</span>
+            <h3 class="es-ind-recently-viewed-name">Xomie Redmi 8 Sport<br>Water Resitance Watch</h3>
+            <span class="es-ind-recently-viewed-price">$579.00</span>
+          </div>
+          <!--<span class="es-ind-recently-viewed-dot"></span>-->
+        </a>
+        <a href="product_details.html" class="es-ind-recently-viewed-item">
+          <div class="es-ind-recently-viewed-image">
+            <span class="es-ind-recently-viewed-badge">NEW</span>
+            <img src="assets/images/recent-02.webp" alt="Xomie Redmi 8 Sport Water Resitance Watch">
+          </div>
+          <div class="es-ind-recently-viewed-info">
+            <span class="es-ind-recently-viewed-count">(152)</span>
+            <h3 class="es-ind-recently-viewed-name">Xomie Redmi 8 Sport<br>Water Resitance Watch</h3>
+            <span class="es-ind-recently-viewed-price">$579.00</span>
+          </div>
+          <!--<span class="es-ind-recently-viewed-dot"></span>-->
+        </a>
+        <a href="product_details.html" class="es-ind-recently-viewed-item">
+          <div class="es-ind-recently-viewed-image">
+            <span class="es-ind-recently-viewed-sale">SAVE<br>$192.00</span>
+            <img src="assets/images/cellphone-01.webp" alt="SROK Smart Phone 128GB OLED Retina">
+          </div>
+          <div class="es-ind-recently-viewed-info">
+            <span class="es-ind-recently-viewed-count">(152)</span>
+            <h3 class="es-ind-recently-viewed-name">SROK Smart Phone<br>128GB, Oled Retina</h3>
+            <div class="es-ind-recently-viewed-price-row">
+              <span class="es-ind-recently-viewed-price">$579.00</span>
+              <del>$779.00</del>
+            </div>
+          </div>
+          <!--<span class="es-ind-recently-viewed-dot"></span>-->
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--- Your Recently Viewed Section End --->
+
+  <div data-component="footer"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
