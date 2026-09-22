@@ -208,3 +208,19 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(element);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const actionButtons = document.querySelectorAll(".prd-det-sen-bundle-cart");
+
+    actionButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            window.location.href = "404.html";
+
+        });
+
+    });
+
+});

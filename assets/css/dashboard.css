@@ -62,7 +62,7 @@ button {
     display: flex;
     flex-direction: column;
     width: var(--es-sidebar-width);
-    height: 100vh;
+    height: 100dvh;
     padding: 0 16px;
     overflow-y: auto;
     overflow-x: hidden;

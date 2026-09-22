@@ -477,8 +477,10 @@
 .es-ind-deals-product-title {font-size: 15px;}
 }
 @media (max-width:991.98px) {
-.es-ind-deals-content {grid-template-columns: 330px minmax(0,1fr);gap: 35px;}
-.es-ind-deals-side-products {display: none;}
+.es-ind-deals-content {grid-template-columns: 330px minmax(0,1fr);gap:0px 35px;}
+.es-ind-deals-side-products { display: flex;flex-direction: row;justify-content: space-evenly;align-items: center;width: 100%;gap: 0; padding-top: 0;}
+.es-ind-deals-side-product img{height: 100%;width: 100%;}
+.es-ind-deals-side-product{border-bottom: none;}
 .es-ind-deals-gallery {width: 330px;}
 .es-ind-deals-main-image {width: 285px;}
 .es-ind-deals-main-image img {width: 285px;height: 230px;}
@@ -1566,6 +1568,11 @@
     color: #111;
     text-decoration: none;
 }
+@media (max-width:991px) {
+    .prd-top-category{
+        justify-content: space-between;
+    }
+}
 
 .prd-top-category div {
     display: flex;
@@ -2163,7 +2170,7 @@
 }
 @media (max-width:767.98px) {
 .prd-shop {padding: 20px 0 35px;}
-.prd-shop-topbar {align-items:flex-start;gap: 12px;}
+.prd-shop-topbar {gap: 12px;flex-direction: column;align-items:normal;}
 .prd-shop-topbar-left {flex-wrap: wrap;}
 .prd-shop-topbar-right span,.prd-shop-topbar-right .prd-items-select {display: none;}
 .prd-mobile-filter-button {display: inline-flex;align-items: center;gap: 5px;height: 30px;padding: 0 10px;border: 1px solid #dde1e7;border-radius: 4px;background: #fff;color: #222;font-family: var(--es-font-body);font-size: 12px;}
@@ -2208,6 +2215,17 @@ body.prd-filter-open {overflow: hidden;}
     }
 }
 
+.prd-shop-topbar-view-btn{
+    text-wrap: nowrap;
+}
+.prd-shop{
+    overflow-x: visible;
+}
+@media (max-width:991px) {
+    .prd-shop{
+    overflow-x: hidden;
+}
+}
 /* =========================================
    PRODUCT PAGINATION
 ========================================= */
@@ -2849,4 +2867,339 @@ body.prd-filter-open {overflow: hidden;}
     transform: none;
     transition: none;
   }
+}
+
+/*---- Over flow Problem ---
+.es-ldr-loader,.es-ind-brand-category,.es-ind-deals,.es-ind-preorder,.es-ind-product-tabs,.es-ind-brand-new,.es-ind-cellphones,.es-ind-laptops,.es-ind-promotions,.es-ind-recently-viewed{
+    overflow-x: hidden;
+}*/
+section{
+    overflow-x: hidden;
+}
+
+
+/* CELLPHONE PRODUCT WISHLIST */
+
+.es-ind-cellphones-product-image {
+    position: relative;
+}
+
+.es-ind-cellphones-wishlist {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #f2f4f7;
+    color: #111;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--es-transition);
+    z-index: 5;
+}
+
+@media (max-width:1050px) {
+    .recent-view-wishlist{
+        top: 12px;
+        right: -6px;
+    }
+}
+@media (max-width:991px) {
+    .recent-view-wishlist{
+        top: 12px;
+        right: 12px;
+    }
+}
+
+.es-ind-cellphones-wishlist:hover {
+    background: var(--es-primary);
+    color: var(--es-white);
+}
+
+.es-ind-cellphones-wishlist.active {
+    background: var(--es-primary);
+    color: var(--es-white);
+}
+
+.es-ind-cellphones-wishlist.active i {
+    font-size: 14px;
+}
+.es-ind-recently-viewed-name ,.es-ind-recently-viewed-price{
+    cursor: pointer;
+}
+
+/**/
+/* =========================================
+   PRODUCT SHOP TOPBAR
+========================================= */
+
+.prd-shop-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 48px;
+    gap: 25px;
+}
+
+/* Left */
+
+.prd-shop-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--es-text, #5f6f7a);
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.prd-shop-topbar-left strong {
+    color: var(--es-dark, #111827);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.prd-shop-topbar-left small {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* Right */
+
+.prd-shop-topbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 28px;
+}
+
+
+/* Show Item */
+
+.prd-shop-show-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prd-shop-show-items > span {
+    color: #777;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+/* Item Buttons */
+
+.prd-shop-item-options {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f0f2f6;
+}
+
+.prd-shop-item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 34px;
+    height: 34px;
+    padding: 0 9px;
+
+    border: 0;
+    background: transparent;
+
+    color: #777;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.prd-shop-item-btn:hover {
+    color: var(--es-primary, #0b2d4f);
+}
+
+.prd-shop-item-btn.active {
+    background: #e5e8ef;
+    color: #222;
+}
+
+
+/* Sort */
+
+.prd-shop-sort {
+    display: flex;
+    align-items: center;
+}
+
+.prd-sort-select {
+    width: 115px;
+    height: 34px;
+    padding: 0 30px 0 12px;
+
+    border: 0;
+    border-radius: 5px;
+
+    background-color: #f0f2f6;
+    color: #222;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.prd-sort-select:focus {
+    box-shadow: none;
+}
+
+
+/* View As */
+
+.prd-shop-topbar-view-btn {
+    color: #777;
+    font-size: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: color 0.25s ease;
+}
+
+.prd-shop-topbar-view-btn:hover {
+    color: var(--es-primary, #0b2d4f);
+}
+
+
+/* Mobile Filter */
+
+.prd-mobile-filter-button {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    height: 34px;
+    padding: 0 12px;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: #f0f2f6;
+    color: #222;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .prd-shop-topbar-right {
+        gap: 15px;
+    }
+
+    .prd-shop-topbar-view-btn {
+        display: none;
+    }
+
+    .prd-mobile-filter-button {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .prd-shop-topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .prd-shop-topbar-left {
+        width: 100%;
+    }
+
+    .prd-shop-topbar-right {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .prd-shop-show-items {
+        gap: 7px;
+    }
+
+    .prd-shop-show-items > span {
+        font-size: 11px;
+    }
+
+    .prd-sort-select {
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .prd-shop-topbar-right {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .prd-shop-item-btn {
+        min-width: 30px;
+        height: 32px;
+        padding: 0 7px;
+    }
+
+    .prd-sort-select {
+        width: 95px;
+        height: 32px;
+    }
+
+    .prd-mobile-filter-button {
+        height: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .es-ind-deals-gallery {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .es-ind-deals-main-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .es-ind-deals-main-image img {
+        margin: 0 auto;
+    }
+
 }

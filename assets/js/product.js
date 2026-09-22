@@ -353,3 +353,30 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(element);
     });
 });
+
+/* =========================================
+   PRODUCT ITEMS PER PAGE
+========================================= */
+
+const productItemButtons = document.querySelectorAll(
+    ".prd-shop-item-btn"
+);
+
+productItemButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        productItemButtons.forEach(function (item) {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+        const itemsPerPage = this.textContent.trim();
+
+        console.log("Items per page:", itemsPerPage);
+
+        // Add your product pagination/filter logic here
+    });
+
+});

@@ -120,7 +120,7 @@
     <!--- Product Hero Section End --->
 
     <!--- Product Section Start --->
-    <section class="prd-products-section es-reveal">
+    <section class="prd-products-section">
         <div class="container">
 
             <!--- Popular Categories --->
@@ -218,7 +218,7 @@
             <div class="prd-content-layout">
 
                 <!--- Sidebar --->
-                <aside class="prd-sidebar es-reveal-left">
+                <aside class="prd-sidebar">
 
                     <div class="prd-sidebar-header">
                         <h3>Categories</h3>
@@ -462,11 +462,11 @@
     <!--- Product Section End --->
 
     <!--- Product Listing Start --->
-    <section class="prd-shop es-reveal">
+    <section class="prd-shop ">
         <div class="container">
 
             <div class="prd-shop-layout">
-                <aside class="prd-filter-sidebar es-reveal-left" id="prd-filter-sidebar">
+                <aside class="prd-filter-sidebar" id="prd-filter-sidebar">
                     <div class="prd-filter-mobile-header">
                         <h2 class="prd-filter-heading">Categories</h2>
                         <button type="button" class="prd-filter-close" id="prd-filter-close"
@@ -585,16 +585,41 @@
                 </aside>
                 <div class="prd-products-area es-reveal-right">
                     <div class="prd-shop-topbar">
-                        <div class="prd-shop-topbar-left"><strong>Categories</strong><span>1 - 40</span><small>of 120
-                                results</small></div>
-                        <div class="prd-shop-topbar-right">
-                            <span>Show item</span>
-                            <select class="prd-sort-select" aria-label="Sort products">
-                                <option value="default">Default</option>
-                            </select>
-                            <button type="button" class="prd-mobile-filter-button"><i
-                                    class="bi bi-funnel"></i>Filter</button>
+
+                        <div class="prd-shop-topbar-left">
+                            <strong>1 - 40</strong>
+                            <small>of 120 results</small>
                         </div>
+
+                        <div class="prd-shop-topbar-right">
+
+                            <div class="prd-shop-show-items">
+                                <span>Show item</span>
+
+                                <div class="prd-shop-item-options">
+                                    <button type="button" class="prd-shop-item-btn active">24</button>
+                                    <button type="button" class="prd-shop-item-btn">48</button>
+                                    <button type="button" class="prd-shop-item-btn">72</button>
+                                </div>
+                            </div>
+
+                            <div class="prd-shop-sort">
+                                <select class="prd-sort-select" aria-label="Sort products">
+                                    <option value="default">Default</option>
+                                </select>
+                            </div>
+
+                            <a href="404.html" class="prd-shop-topbar-view-btn">
+                                View As
+                            </a>
+
+                            <button type="button" class="prd-mobile-filter-button">
+                                <i class="bi bi-funnel"></i>
+                                Filter
+                            </button>
+
+                        </div>
+
                     </div>
                     <div class="prd-products-grid es-reveal-stagger" id="prd-products-grid">
                         <article class="prd-product-card" data-brand="ernavato" data-price="579" data-rating="5"

@@ -195,3 +195,48 @@ document.addEventListener("DOMContentLoaded", () => {
     revealObserver.observe(element);
   });
 });
+
+/*--- Cellphones Wishlist ---*/
+const cellphoneWishlistButtons = document.querySelectorAll(
+    ".es-ind-cellphones-wishlist"
+);
+
+cellphoneWishlistButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const icon = this.querySelector("i");
+
+        this.classList.toggle("active");
+
+        if (this.classList.contains("active")) {
+
+            icon.classList.remove("bi-heart");
+            icon.classList.add("bi-heart-fill");
+
+        } else {
+
+            icon.classList.remove("bi-heart-fill");
+            icon.classList.add("bi-heart");
+
+        }
+
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const actionButtons = document.querySelectorAll(".es-ind-recently-viewed-name ,.es-ind-recently-viewed-price");
+
+    actionButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            window.location.href = "product.html";
+
+        });
+
+    });
+
+});
